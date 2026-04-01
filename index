@@ -2,35 +2,23 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>P&P STOCK Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&P STOCK</title>
+    
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/kX4B6kDF/309588264-514064594063078-7957377763130496451-n.jpg">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/kX4B6kDF/309588264-514064594063078-7957377763130496451-n.jpg"> 
+    
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            background-color: #f8f9fa;
-        }
-        /* ปรับให้ Iframe เต็มหน้าจอและไม่มีขอบ */
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+        /* เพิ่ม display: block เพื่อแก้ปัญหา scrollbar ซ้อน */
+        iframe { width: 100%; height: 100%; border: none; display: block; }
     </style>
 </head>
 <body>
-
+    <!-- แก้ไขตรงนี้: เพิ่ม allow="geolocation" เพื่อเปิดสิทธิ์ GPS -->
     <iframe 
-        src="https://script.google.com/macros/s/AKfycbwAAq8IRRtyZMphmFo2rvdvyS7VkggyaLDDJ82khuq4U-3zR8NqIXx5lZdwK7ZMiqV3/exec" 
-        allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
-        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals">
+        src="https://script.google.com/macros/s/AKfycbwAAq8IRRtyZMphmFo2rvdvyS7VkggyaLDDJ82khuq4U-3zR8NqIXx5lZdwK7ZMiqV3/exec"
+        allow="geolocation">
     </iframe>
-
 </body>
 </html>
